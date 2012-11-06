@@ -46,7 +46,7 @@ AuthorizationServer that can be then injected into the OAuthorization module
 
 And filter the server module as a `filter.Plan`.
 
-     http.filter(Authorization(YourAuthorizationServer))
+     http.filter(OAuthorization(YourAuthorizationServer))
 
 #### Authorization flows
 
