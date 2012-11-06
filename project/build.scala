@@ -20,7 +20,7 @@ object UnfilteredOAuth2Build extends Build {
   	.settings(defaultSettings ++ Seq(
     		libraryDependencies ++= Seq(
     			"net.databinder" %% "unfiltered" % "0.6.4",
-    			"net.databinder" %% "unfiltered-spec" % "0.6.4",
+    			"net.databinder" %% "unfiltered-spec" % "0.6.4" % "test",
     			"org.scala-tools.testing" % "specs_2.9.1" % "1.6.9" % "test"
     		)) :_*
   	)
@@ -31,7 +31,7 @@ object UnfilteredOAuth2Build extends Build {
 		libraryDependencies ++= Seq(
 			"net.databinder" %% "unfiltered-filter" % "0.6.4",
 			"net.databinder" %% "unfiltered-jetty" % "0.6.4",
-			"net.databinder" %% "unfiltered-spec" % "0.6.4",
+			"net.databinder" %% "unfiltered-spec" % "0.6.4" % "test",
 			"org.scala-tools.testing" % "specs_2.9.1" % "1.6.9" % "test"
 		)) :_*
 	)
