@@ -6,7 +6,7 @@ object UnfilteredOAuth2Build extends Build {
 
   def defaultSettings: Seq[Setting[_]] = Seq(
 		organization := "net.databinder",
-		version := "0.6.4",
+		version := "0.6.4-SNAPSHOT",
 		scalaVersion := "2.9.2",
 		publishTo := repo
 	)
