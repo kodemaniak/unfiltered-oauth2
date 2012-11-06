@@ -2,6 +2,8 @@ import sbt._
 import Keys._
 
 object UnfilteredOAuth2Build extends Build {
+  val repo = Some(Resolver.file("repository", new File("/var/www/repository")))
+
   def defaultSettings: Seq[Setting[_]] = Seq(
 		organization := "net.databinder",
 		version := "0.6.4",
@@ -9,8 +11,6 @@ object UnfilteredOAuth2Build extends Build {
 		publishTo := repo
 	)
 
-
-  val repo = Some(Resolver.file("repository", new File("/tmp")))
 
   lazy val root = Project(id = "unfiltered-oauth2-root", base = file("."))
   	.settings(defaultSettings :_*)
